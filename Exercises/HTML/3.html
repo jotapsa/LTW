@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <form action="save.php" method="get">
+      <label>Name:
+        <input type="text" name="name">
+      </label><br/>
+      <label>Age:
+        <input type="radio" name="age" value="<18">&lt;18
+        <input type="radio" name="age" value="19-35">19-35
+        <input type="radio" name="age" value="36-48">36-48
+        <input type="radio" name="age" value=">48">&gt;48
+      </label><br/>
+      <label>Profession:
+        <input type="text" name="profession">
+      </label><br/>
+      <label>Country:
+        <select name="country">
+          <option value="portugal">Portugal</option>
+          <option value="brazul">Brazil</option>
+          <option value="us">US</option>
+          <option value="uk">UK</option>
+        </select>
+      </label><br/>
+      <label>Interests:
+        <input type="checkbox" name="driving" value="driving">Driving
+        <input type="checkbox" name="playing games" value="games">Games
+        <input type="checkbox" name="photography" value="photography">Photography
+      </label><br/>
+      <fieldset>
+        <legend>How did you find this website?</legend>
+        <label>
+          <textarea name="how" rows="4" cols="50">
+          </textarea>
+        </label><br/>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
