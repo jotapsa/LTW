@@ -1,0 +1,81 @@
+/*  Importing "Montserrat" font */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+/*  Importing "Georgia" font */
+@import url("https://fonts.googleapis.com/css?family=Georgia");
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+ /* This applies to every anchor on the HTML document */
+a, a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+header{
+  background-color: #046DD5;
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+header h1{
+  font-size: 1.5em;
+}
+
+header h2{
+  font-size: 0.8em;
+}
+
+/*checkbox */
+#hamburger{
+  display: none;
+}
+
+#menu ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+#menu ul li{
+    list-style-type: none;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 0.3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#menu ul li:first-child{
+  border-top-color: #E1493E;
+}
+
+#menu ul li:nth-child(2){
+  border-top-color: #8ABA56;
+}
+
+#menu ul li:nth-child(3){
+  border-top-color: #5B4282;
+}
+
+#menu ul li:nth-child(4){
+  border-top-color: #FF8932;
+}
+
+#menu ul li:nth-child(5){
+  border-top-color: #19B6E9;
+}
+
+#menu ul li:last-child{
+  border-top-color: #E84C8B;
+}
+
+#menu ul a{
+  color:black;
+}
+
+#related {
+  background-color: #2A2F33;
+  color: white;
+}
