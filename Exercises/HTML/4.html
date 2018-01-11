@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Profile</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <header>
+    <h1> FaceBook </h1>
+    <img src="fb.png" width="50" height="50">
+    <nav id="menu">
+      <ul>
+        <li><a href="register.php">Register</a></li>
+        <li><a href="messages.php">Messages</a></li>
+        <li><a href="about.php">About</a></li>
+      </ul>
+    </nav>
+    <form action="login.php" method="post">
+      <label>Username:
+        <input type="text" name="username">
+      </label>
+      <label>Password:
+        <input type="password" name="password">
+      </label>
+      <input type="submit" value="Submit">
+    </form>
+  </header>
+  <aside id="friends">
+    <h4>Friends</h4>
+    <ul>
+      <li>
+        <a href="friend.php?id=jane">
+          <img src="photo.php?id=jane" alt="Jane Doe">Jane Doe
+        </a>
+      </li>
+      <li>
+        <a href="friend.php?id=louie">
+          <img src="photo.php?id=louie" alt="Louie Doe">Louie Doe
+        </a>
+      </li>
+      <li>
+        <a href="friend.php?id=mary">
+          <img src="photo.php?id=mary" alt="Mary Doe">Mary Doe
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <section id="personal">
+    <h4>Information</h4>
+    <ul>
+      <li>Name: João Sá</li>
+      <li>Age: 21</li>
+      <li>Country: Portugal</li>
+    </ul>
+  </section>
+  <section id="posts">
+    <h4>Posts</h4>
+    <article>
+      <h5>Something about life</h5>
+      <img src="image.php?id=24345" alt="Image for post 24345">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+      <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+      <footer>
+        <a href="comments.php?id=24345">Comments</a> <span class="date">@May 5th 2014</span>
+      </footer>
+    </article>
+    <article>
+      <h5>Something about something else</h5>
+      <img src="image.php?id=23562" alt="Image for post 23562">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in ultricies mi. Sed fermentum vitae sapien sed aliquam. Maecenas a.</p>
+      <p>Quisque porttitor mollis tellus, ac sollicitudin ipsum tempus quis. Phasellus sit amet.</p>
+      <footer>
+        <a href="comments.php?id=23562">Comments </a> <span class="date">@May 1st 20014</span>
+      </footer>
+    </article>
+  </section>
+</body>
+</html>
