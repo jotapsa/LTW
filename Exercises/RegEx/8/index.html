@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Regular Expressions</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form action="myscript.php">
+      <label>
+        Username:
+        <input id="username" type="text" pattern="[a-zA-Z]\w{3,8}[a-zA-Z]" name="username" required="required"/>
+      </label>
+      <br/>
+      <label>
+        Password:
+        <!--  pattern="(?=.*[0-9].*[0-9])(?=.*[;\.:].*[;\.:])([\w;\.:])[\w;\.:]{4,}(?!\1)[\w;\.:]" -->
+        <input id="password" type="text" name="password" required="required"/>
+      </label>
+      <br/>
+      <label>
+        Real Name:
+        <input type="text" pattern="[^0-9\\|!&quot;@#£$§%&/()=?{[\]}'«»*+]+" name="realname" required="required"/>
+      </label>
+      <br/>
+      <label>
+        Zip-Code:
+        <input type="text" pattern="\d{4}|\d{4}-\d{3}" name="zipcode" required="required"/>
+      </label>
+      <br/>
+      <label>
+        IPv4:
+        <input type="text" pattern="(?:\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(?:\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])" name="ipv4" required="required"/>
+      </label>
+      <br/>
+      <label>
+        MAC Address:
+        <input type="text" pattern="([0-9A-F]{2}-){5}|([0-9A-F]{2}:){5}[0-9A-F]{2}" name="macaddress" required="required"/>
+      </label>
+      <br/>
+
+      <input type="submit" value="Try"/>
+    </form>
+  </body>
+</html>
++
