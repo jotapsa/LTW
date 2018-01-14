@@ -1,0 +1,15 @@
+#todo li{
+  color: magenta
+}
+
+div.widget ul#todo{
+  color: green
+}
+
+#todo li:first-child{
+  color: cyan
+}
+
+li+li+li{ 
+  color: yellow
+}
